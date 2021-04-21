@@ -5,7 +5,7 @@
 
 int main()
 {
-
+    char opcaoRecebida[1];
     int opcao, numero;
     char buf[BUFFERSIZE];
 
@@ -15,7 +15,8 @@ int main()
         printf("Para converter de hexadecimal para decimal, digite 2\n");
         printf("Para sair, digite 3\n");
 
-        scanf("%i", &opcao);
+        scanf("%s", opcaoRecebida);
+        opcao = atoi(opcaoRecebida);
 
         switch (opcao){
             case 1:
